@@ -142,3 +142,53 @@ function createCityList(citySearchList) {
           });
       });
   }
+
+  // Creating the local storage
+  $(document).ready(function() {
+    var citySearchListStringified = localStorage.getItem("citySearchList");
+  
+    var citySearchList = JSON.parse(citySearchListStringified);
+  
+    if (citySearchList == null) {
+      citySearchList = {};
+    }
+  
+    createCityList(citySearchList);
+  
+    $("#current-weather").hide();
+    $("#forecast-weather").hide();
+  
+  
+  
+    $("#search-button").on("click", function(event) {
+      event.preventDefault();
+      var city = $("#city-input")
+        .val()
+        .trim()
+        .toLowerCase();
+  
+      if (city != "") {
+        //Checking to see if there is any text entered
+      
+        citySearchList[city] = true;
+      localStorage.setItem("citySearchList", JSON.stringify(citySearchList));
+  
+      populateCityWeather(city, citySearchList);
+  
+      $("#current-weather").show();
+      $("#forecast-weather").show();
+      }
+  
+      
+    });
+  
+    $("#city-list").on("click", "button", function(event) {
+      event.preventDefault();
+      var city = $(this).text();
+  
+      populateCityWeather(city, citySearchList);
+  
+      $("#current-weather").show();
+      $("#forecast-weather").show();
+    });
+  });
