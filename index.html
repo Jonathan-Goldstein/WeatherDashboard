@@ -23,10 +23,9 @@
      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
    
     
-   <!--Dark Nav Bar-->
-     <div class="bg-dark pt-2 pb-2"> 
+   <!--Decided to go with no NavBar, thought it  looked cooler-->
         <div class="container">
-            <h1 class="text-center text-white">Weather Dashboard</h1>
+            <h1 class="text-center text-orange">Weather Dashboard</h1>
         </div>
     </div>
     
@@ -34,7 +33,7 @@
   <!--Adding a container where the user will input the cities they want search the weather of -->
     <div class="container-fluid">
         <div class=row>
-            <div class="col-md-3 pl-2">
+            <div class="col-md-4">
                 <div class="card" style="width: 22rem;">
                     <div class="card-body">
                         <h6>Search for a City:</h6>
@@ -54,7 +53,8 @@
             </div>
             <!--Creating a column for the temperature humidity wind and uv-->
          
-            <div class="col-md-9">
+            <div class="col-md-8">
+                <div style="padding-right: 40px;"></div>
                 <div id="current-weather" class='card'>
                     <div class="card-body">
                         <div id="city-date-icon">
@@ -65,13 +65,16 @@
                         <p class="card-text" id="current-temp"></p>
                         <p class="card-text" id="current-humidity"></p>
                         <p class="card-text" id="current-wind"></p>
-                        <p class="card-text" id="current-uv"></p>
-                        </ul>
+                        <p class="card-text" id="current-uv">
+                            <button type="button1" id="button1" class="btn" >UV Index</button>
+                                
+                        </p>
+                        
                     </div>
                 </div>
             <!--Creating a row for the weather forecast-->
              <div class="row">
-                    <div id="forecast-weather" class="col-md-9">
+                    <div id="forecast-weather" class="col-md-11">
                         <h4>5-Day Forecast:</h4>
                         <div id="forecast-cards">
                             <div class="card forecast">
@@ -141,4 +144,3 @@
     
 </body>
 </html>
-
