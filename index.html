@@ -53,20 +53,22 @@
                 </div>
             </div>
             <!--Creating a colum for the temperature humidity wind and uv-->
-           
-            <div class="col-10">
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">City</h1>
-                            <h2 class="card-text dateToday" id="dateToday"> </h2>
-                            <img class="icontoday" src="">
-                            <p class="card-text" id="temp">Temperature: </p>
-                            <p class="card-text" id="humid">Humidity: </p>
-                            <p class="card-text" id="wind">Wind Speed: </p>
-                            <p class="card-text" id="uv">UV Index: </p>
+         
+            <div class="col-md-9">
+                <div id="current-weather" class='card'>
+                    <div class="card-body">
+                        <div id="city-date-icon">
+                            <span id='city-name'>
+                            </span>
+                            <span id='current-icon'></span>
                         </div>
+                        <p class="card-text" id="current-temp"></p>
+                        <p class="card-text" id="current-humidity"></p>
+                        <p class="card-text" id="current-wind"></p>
+                        <p class="card-text" id="current-uv"></p>
+                        </ul>
                     </div>
+                </div>
 <p>Hello World!</p>
     
 </body>
