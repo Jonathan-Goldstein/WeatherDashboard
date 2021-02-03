@@ -1,4 +1,9 @@
 body {
+     /* font */
+  font-family: "Open Sans", sans-serif;
+}
+   .bg {
+      /* image used */
    background-image: url("../../assets/images/Fotolia_171500112_Subscription_Monthly_M.jpg");
     /* Full height */
   height: 100%;
@@ -8,8 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   
-   /* font */
-  font-family: "Open Sans", sans-serif;
+ 
 }
 
 .heading {
