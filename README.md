@@ -27,9 +27,16 @@ https://jonathan-goldstein.github.io/WeatherDashboard/
 
 ## The landing page:
 
+![plot](./assets/images/Image0.jpeg)
+
+## The weather forecast with UV Index Green:
+
 ![plot](./assets/images/Image1.jpeg)
 
-## The weather forecast:
+## The weather forecast with UV Index Yellow:
 
 ![plot](./assets/images/Image2.jpeg)
 
+## The weather forecast with UV Index Red:
+
+![plot](./assets/images/Image3.jpeg)
