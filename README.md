@@ -35,8 +35,8 @@ https://jonathan-goldstein.github.io/WeatherDashboard/
 
 ## The weather forecast with UV Index Yellow:
 
-![plot](./assets/images/Image2.jpeg)
+![plot](./assets/images/Image3.jpeg)
 
 ## The weather forecast with UV Index Red:
 
-![plot](./assets/images/Image3.jpeg)
+![plot](./assets/images/Image2.jpeg)
