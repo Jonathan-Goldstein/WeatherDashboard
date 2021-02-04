@@ -87,7 +87,7 @@ function createCityList(citySearchList) {
           console.log(uvIndex);
   
             
-            //making it a number
+
            const uvInt = parseFloat(uvIndex[0].value) 
             
             const uvButton = $("#currentUVButton");
