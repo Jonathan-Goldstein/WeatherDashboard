@@ -86,10 +86,41 @@ function createCityList(citySearchList) {
         }).then(function(uvIndex) {
           console.log(uvIndex);
   
-          var uvIndexDisplay = $("<result>");
+            
+            //making it a number
+           const uvInt = parseFloat(uvIndex[0].value) 
+            
+            const uvButton = $("#currentUVButton");
+          
+          
+          
+
+            //if uvIndex <=2 the color needs to be green
+            //if uvIndex >2 but <= 6 the color needs to be yellow
+            //if uvIndex >= 6 the color needs to be red
+
   
-          $("#current-uv").text("UV Index: ");
-          $("#current-uv").append(uvIndexDisplay.text(uvIndex[0].value));
+          // Creating the if else statements to change the UV index colors
+          uvButton.text(uvInt);
+
+          if (uvInt <= 2) { 
+              
+            uvButton.removeClass().addClass("btn btn-success");
+            
+          }
+
+          else if (uvInt > 2 && uvInt <= 5) {
+
+            uvButton.removeClass().addClass("btn btn-warning");
+
+          }
+
+          else if (uvInt >= 6) {
+
+            uvButton.removeClass().addClass("btn btn-danger");
+          
+          }
+
   
           $.ajax({
             url: queryURL2,
