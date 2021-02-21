@@ -40,3 +40,7 @@ https://jonathan-goldstein.github.io/WeatherDashboard/
 ## The weather forecast with UV Index Red:
 
 ![plot](./assets/images/Image2.jpeg)
+
+## License & Copyright
+
+Licensed under the [MIT License](LICENSE).
